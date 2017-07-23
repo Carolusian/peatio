@@ -9,6 +9,9 @@ service rabbitmq-server restart
 
 cd /peatio
 
+echo "Preparing configuration files"
+bin/init_config
+
 echo "Initializing database and seed data ..."
 bundle exec rake db:setup
 
