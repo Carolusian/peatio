@@ -5,6 +5,7 @@ services:
     image: pkufashuo400/peatio
     volumes:
       - ./config:/peatio/config
+      - ./db:/peatio/db
     command: bash /entrypoint.sh
     links:
       - redis
@@ -19,6 +20,9 @@ services:
 
   bitcoind:
     image: freewil/bitcoin-testnet-box
+    volumes:
+      - ./docker-bitcoind.sh:/home/tester/bitcoin-testnet-box/docker-bitcoind.sh
+    entrypoint: /home/tester/bitcoin-testnet-box/docker-bitcoind.sh
     ports:
       - "19001:19001"
       - "19011:19011"

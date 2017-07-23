@@ -8,14 +8,14 @@ development: &defaults
   # reconnect: true
   # host: db
   adapter: sqlite3
-  database: peatio_development.db
+  database: db/peatio_development.db
   pool: 5
   timeout: 5000
 
 test:
   <<: *defaults
-  database: peatio_test.db
+  database: db/peatio_test.db
 
 production:
   <<: *defaults
-  database: peatio_production.db
+  database: db/peatio_production.db

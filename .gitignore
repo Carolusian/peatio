@@ -48,5 +48,5 @@ tags
 .DS_Store
 .agignore
 dump.rdb
-peatio_development.db
-peatio_test.db
+**/peatio_development.db
+**/peatio_test.db
