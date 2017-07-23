@@ -4,6 +4,7 @@ gem 'rails', '~> 4.0.12'
 gem 'rails-i18n'
 
 gem 'mysql2', '~> 0.3.18'
+gem 'sqlite3', '~> 1.3.13'
 gem 'activerecord', '~> 4.0.12'
 gem 'daemons-rails'
 gem 'redis-rails'
