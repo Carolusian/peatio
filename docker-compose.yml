@@ -2,11 +2,9 @@ version: '3'
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: pkufashuo400/peatio
     volumes:
-      - .:/peatio
+      - ./config:/peatio/config
     command: bash /entrypoint.sh
     links:
       - redis
